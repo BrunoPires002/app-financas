@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    place-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.conteudo{
+    text-align: -webkit-center;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    align-content: center;
+}
+
+form{
+    width: 50%;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+}
+
+form label, input{
+    margin-bottom: 2vh;
+}
+
+.text,.button{
+    height: 5vh;
+    border-radius: 10px;
+    border: solid 1px;
+    color: black;
+    font-size: large;
+}
+
+.title{
+    text-align: left;
+}
+
+.button{
+    cursor: pointer;
+}
