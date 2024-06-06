@@ -10,17 +10,22 @@ body {
     background-color: black;
 }
 
-.container{
-    position: relative;
-    place-content: center;
+.navbar{
     display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    margin: 2vh;
+}
+
+.container{
     height: 100vh;
+    justify-content: center;
 }
 
 .conteudo{
     text-align: -webkit-center;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
     align-content: center;
 }
 
@@ -49,4 +54,27 @@ form label, input{
 
 .button{
     cursor: pointer;
+}
+
+.gastos-despesas{
+    margin-top: 5vh;
+}
+
+.credito-debito{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    place-content: center;
+}
+
+.caixa{
+    width: 15vh;
+    height: 10vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 3vh;
+}
+
+.credito, .debito{
+    margin: 5vh;
 }
