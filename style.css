@@ -11,8 +11,13 @@ body {
 }
 
 .navbar{
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+hr{
+    margin-bottom: 15px;
 }
 
 .navbar a{
@@ -23,6 +28,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 1.5vh;
 }
 
 .navbar a:hover{
@@ -35,12 +41,15 @@ body {
     height: 100vh;
     justify-content: center;
     align-content: center;
+    text-align: -webkit-center;
 }
 
 .conteudo{
+    width: 90%;
     text-align: -webkit-center;
     align-content: center;
 }
+
 
 form{
     width: 50%;
@@ -69,15 +78,20 @@ form label, input{
     cursor: pointer;
 }
 
-.gastos-despesas, .historico{
+.gastos-despesas, .historico, .tela-investimentos, .tela-emprestimos{
     margin-top: 5vh;
 }
 
-.credito-debito{
-    display: flex;
+.tela-emprestimos a{
+    text-decoration: none;
+}
+
+.credito-debito, .investimentos, .emprestimos{
     align-items: center;
     width: 100%;
     place-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .caixa{
@@ -95,8 +109,12 @@ form label, input{
     color: black;
 }
 
-.credito, .debito{
+.credito, .debito, .total-investido, .nesse-mes{
     margin: 5vh;
+}
+
+.total-investido, .nesse-mes{
+    font-size: 1.5vh;
 }
 
 .tipo_historico{
@@ -106,4 +124,16 @@ form label, input{
 .tipo_historico h2{
     font-size: 15px;
     font-weight: 100;
+}
+
+.pegar-emprestimo .btn{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    height: 50px;
+    align-content: center;
+}
+
+.form-emprestimos .title{
+    text-align: center;
 }
