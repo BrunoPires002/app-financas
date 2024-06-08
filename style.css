@@ -17,11 +17,24 @@ body {
 
 .navbar a{
     margin: 2vh;
+    height: 3vh;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+
 }
 
 .container{
     height: 100vh;
     justify-content: center;
+    align-content: center;
 }
 
 .conteudo{
@@ -56,7 +69,7 @@ form label, input{
     cursor: pointer;
 }
 
-.gastos-despesas{
+.gastos-despesas, .historico{
     margin-top: 5vh;
 }
 
@@ -73,8 +86,24 @@ form label, input{
     background-color: white;
     border-radius: 20px;
     margin-top: 3vh;
+    align-content: center;
+    text-align: center;
+}
+
+.caixa h1{
+    font-size: 2vh;
+    color: black;
 }
 
 .credito, .debito{
     margin: 5vh;
+}
+
+.tipo_historico{
+    margin-top: 2vh;
+}
+
+.tipo_historico h2{
+    font-size: 15px;
+    font-weight: 100;
 }
