@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira de Gestão</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Gastos');
+
+      data.addRows([
+        [{v: [8, 0, 0], f: 'Junho'}, 1],
+        [{v: [9, 0, 0], f: 'Julho'}, 2],
+        [{v: [10, 0, 0], f:'Agosto'}, 3],
+        [{v: [11, 0, 0], f: 'Setembro'}, 4],
+        [{v: [12, 0, 0], f: 'Outubro'}, 5],
+        [{v: [13, 0, 0], f: 'Novembro'}, 6],
+      ]);
+
+      var options = {
+        width: 400,
+  height: 240,
+        hAxis: {
+          title: 'Gráfico de lucro',
+          format: '',
+          viewWindow: {
+          }
+        },
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="./index.html">Inicio</a>
+            <a href="./historico.html">Histórico</a>
+            <a href="./investimentos.html">Investimentos</a>
+            <!--<a href="./agenda.html">Agenda</a>-->
+            <a href="./emprestimos.html">Empréstimos</a>
+        </div>
+        <hr>
+        <div class="conteudo">
+
+            <h1>Bem vindo</h1>
+            <h2>Saldo: </h2>
+
+            <div class="tela-pegar-emprestimos">
+                <h1>Emprestimos</h1>
+                <div class="btn">
+                    <form action="" class="form-emprestimos">
+                        <label class="title" for="">Digite o valor do emprestimo</label>
+                        <input class="text" type="text" id="" value="">
+
+                        <input class="button" type="submit" value="Confirmar">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>
